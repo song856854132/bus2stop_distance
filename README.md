@@ -1,0 +1,3 @@
+use javascript geolocation API to calculate the distance from current position to bus station;
+
+use API...

@@ -1,0 +1,176 @@
+[
+  {
+    "PlateNumb": "285-U3",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 0,
+    "BusPosition": {
+      "PositionLon": 121.56294,
+      "PositionLat": 25.058782,
+      "GeoHash": "wsqqw1z3v"
+    },
+    "Speed": 7,
+    "Azimuth": 80,
+    "DutyStatus": 2,
+    "BusStatus": 99,
+    "GPSTime": "2022-02-12T17:32:33+08:00",
+    "SrcUpdateTime": "2022-02-12T17:32:40+08:00",
+    "UpdateTime": "2022-02-12T17:32:45+08:00"
+  },
+  {
+    "PlateNumb": "398-U8",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 0,
+    "BusPosition": {
+      "PositionLon": 121.519457,
+      "PositionLat": 24.991785,
+      "GeoHash": "wsqqjjxg8"
+    },
+    "Speed": 0,
+    "Azimuth": 0,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "GPSTime": "2022-02-12T17:32:38+08:00",
+    "SrcUpdateTime": "2022-02-12T17:32:40+08:00",
+    "UpdateTime": "2022-02-12T17:32:45+08:00"
+  },
+  {
+    "PlateNumb": "728-U3",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 1,
+    "BusPosition": {
+      "PositionLon": 121.526947,
+      "PositionLat": 25.005898,
+      "GeoHash": "wsqqm2jjz"
+    },
+    "Speed": 36,
+    "Azimuth": 238,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "GPSTime": "2022-02-12T17:32:20+08:00",
+    "SrcUpdateTime": "2022-02-12T17:32:40+08:00",
+    "UpdateTime": "2022-02-12T17:32:45+08:00"
+  },
+  {
+    "PlateNumb": "731-U3",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 1,
+    "BusPosition": {
+      "PositionLon": 121.52576,
+      "PositionLat": 24.9901,
+      "GeoHash": "wsqqjmk3g"
+    },
+    "Speed": 17,
+    "Azimuth": 99,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "GPSTime": "2022-02-12T17:32:23+08:00",
+    "SrcUpdateTime": "2022-02-12T17:32:40+08:00",
+    "UpdateTime": "2022-02-12T17:32:45+08:00"
+  },
+  {
+    "PlateNumb": "FAA-161",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 0,
+    "BusPosition": {
+      "PositionLon": 121.536237,
+      "PositionLat": 25.01088,
+      "GeoHash": "wsqqm95fz"
+    },
+    "Speed": 18,
+    "Azimuth": 224,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "GPSTime": "2022-02-12T17:32:33+08:00",
+    "SrcUpdateTime": "2022-02-12T17:32:40+08:00",
+    "UpdateTime": "2022-02-12T17:32:45+08:00"
+  },
+  {
+    "PlateNumb": "KKA-0358",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 0,
+    "BusPosition": {
+      "PositionLon": 121.532958,
+      "PositionLat": 25.045183,
+      "GeoHash": "wsqqmx3dg"
+    },
+    "Speed": 0,
+    "Azimuth": 0,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "GPSTime": "2022-02-12T17:32:33+08:00",
+    "SrcUpdateTime": "2022-02-12T17:32:40+08:00",
+    "UpdateTime": "2022-02-12T17:32:45+08:00"
+  }
+]

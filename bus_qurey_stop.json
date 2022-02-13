@@ -1,0 +1,151 @@
+[
+  {
+    "PlateNumb": "398-U8",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 0,
+    "StopUID": "TPE38874",
+    "StopID": "38874",
+    "StopName": {
+      "Zh_tw": "永元路",
+      "En": "Yongyuan Rd."
+    },
+    "StopSequence": 12,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "A2EventType": 1,
+    "GPSTime": "2022-02-12T17:40:05+08:00",
+    "SrcUpdateTime": "2022-02-12T17:40:30+08:00",
+    "UpdateTime": "2022-02-12T17:40:35+08:00"
+  },
+  {
+    "PlateNumb": "728-U3",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 1,
+    "StopUID": "TPE38929",
+    "StopID": "38929",
+    "StopName": {
+      "Zh_tw": "中興二村",
+      "En": "Zhongxing Village 2"
+    },
+    "StopSequence": 27,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "A2EventType": 1,
+    "GPSTime": "2022-02-12T17:40:02+08:00",
+    "SrcUpdateTime": "2022-02-12T17:40:30+08:00",
+    "UpdateTime": "2022-02-12T17:40:35+08:00"
+  },
+  {
+    "PlateNumb": "731-U3",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 1,
+    "StopUID": "TPE38942",
+    "StopID": "38942",
+    "StopName": {
+      "Zh_tw": "中正環河路口",
+      "En": "Zhongzheng&Huanhe Rd.Intersection"
+    },
+    "StopSequence": 33,
+    "DutyStatus": 2,
+    "A2EventType": 1,
+    "GPSTime": "2022-02-12T17:39:09+08:00",
+    "SrcUpdateTime": "2022-02-12T17:40:30+08:00",
+    "UpdateTime": "2022-02-12T17:40:35+08:00"
+  },
+  {
+    "PlateNumb": "FAA-161",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 0,
+    "StopUID": "TPE38880",
+    "StopID": "38880",
+    "StopName": {
+      "Zh_tw": "羅斯福金門街口",
+      "En": "Roosevelt and Kinmen St. Intersection"
+    },
+    "StopSequence": 18,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "A2EventType": 1,
+    "GPSTime": "2022-02-12T17:39:44+08:00",
+    "SrcUpdateTime": "2022-02-12T17:40:30+08:00",
+    "UpdateTime": "2022-02-12T17:40:35+08:00"
+  },
+  {
+    "PlateNumb": "KKA-0358",
+    "OperatorID": "700",
+    "RouteUID": "TPE10785",
+    "RouteID": "10785",
+    "RouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "SubRouteUID": "TPE107850",
+    "SubRouteID": "107850",
+    "SubRouteName": {
+      "Zh_tw": "672",
+      "En": "672"
+    },
+    "Direction": 0,
+    "StopUID": "TPE38895",
+    "StopID": "38895",
+    "StopName": {
+      "Zh_tw": "捷運南京復興站",
+      "En": "MRT Nanjing Fuxing Station"
+    },
+    "StopSequence": 32,
+    "DutyStatus": 1,
+    "BusStatus": 0,
+    "A2EventType": 1,
+    "GPSTime": "2022-02-12T17:40:18+08:00",
+    "SrcUpdateTime": "2022-02-12T17:40:30+08:00",
+    "UpdateTime": "2022-02-12T17:40:35+08:00"
+  }
+]
