@@ -1,14 +1,4 @@
-// $(function () {
-//     $.ajax({
-//         type: 'GET',
-//         url: 'https://ptx.transportdata.tw/MOTC/v2/Bus/RealTimeNearStop/City/Taipei/672?%24top=30&%24format=JSON',
-//         dataType: 'json',
-//         headers: GetAuthorizationHeader(),
-//         success: function (Data) {
-//             $('body').text(JSON.stringify(Data));
-//         }
-//     });
-// });
+// declaration
 let station_url='https://ptx.transportdata.tw/MOTC/v2/Bus/DisplayStopOfRoute/City/Taipei/672?%24top=30&%24format=JSON'
 let bus_url='https://ptx.transportdata.tw/MOTC/v2/Bus/RealTimeNearStop/City/Taipei/672?%24top=30&%24format=JSON'
 let stop_array = ["Sanmin Rd. Entrance",
@@ -46,9 +36,8 @@ let stop_array = ["Sanmin Rd. Entrance",
     "Zhongzheng&Huanhe Rd.Intersection",
     "672Shuttle"];
 
-
 async function get(url) {
-    
+    // fet the MOTC Transport API to get json data of bus
     const res = await fetch(url, {
         method: 'GET',
         // dataType: 'json',
@@ -60,7 +49,6 @@ async function get(url) {
     // var jsonData = JSON.parse(result_2);
     // for (let i = 0; i < jsonData..length; i++)
 }
-
 
 function GetAuthorizationHeader() {
     var AppID = 'FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF';
@@ -75,7 +63,8 @@ function GetAuthorizationHeader() {
 
     return { 'Authorization': Authorization, 'X-Date': GMTString /*,'Accept-Encoding': 'gzip'*/}; //如果要將js運行在伺服器，可額外加入 'Accept-Encoding': 'gzip'，要求壓縮以減少網路傳輸資料量
 }
-// get bus stop by fetch API
+
+// get bus stop by fetch API and store into array
 // get(station_url)
 // .then(response => {
 //     // response[1] represent routine from 民生社區 to 大鵬新城
@@ -87,19 +76,47 @@ function GetAuthorizationHeader() {
 // })
 // .catch(error => {console.log(error)})
 
-// get bus location and calculate the distance between them
-// get(bus_url)
-// .then(response => {
-//     let bus = response[0];
-//     return bus.StopName;
-//     // document.write(JSON.stringify(bus.StopName));
-// }).then(stop => {
-//     let index_bgn = stop_array.indexOf(stop.StopName);
-//     let index_dst = stop_array.indexOf("Po Jen Hospital")     
-//     // document.write(index_dst - index_bgn)
-// }).catch(error => {console.log(error)})
+// get bus location and save as html content
+get(bus_url)
+.then(response => {
+    bus_location_json = response;
+    document.getElementById("option1").innerHTML=bus_location_json[0].PlateNumb;
+    document.getElementById("option2").innerHTML=bus_location_json[1].PlateNumb;
+    document.getElementById("option3").innerHTML=bus_location_json[2].PlateNumb;
+    document.getElementById("option4").innerHTML=bus_location_json[3].PlateNumb;
+    document.getElementById("option5").innerHTML=bus_location_json[4].PlateNumb;
+    // return bus_location_json;
+    // document.write(JSON.stringify(bus_location_json));
+}).catch(error => {console.log(error)})
 
-// calculate the distance of bus to stop
-// document.write(JSON.stringify(stop_array.StopName));
+/*Dropdown Menu*/
+$('.dropdown').click(function () {
+    $(this).attr('tabindex', 1).focus();
+    $(this).toggleClass('active');
+    $(this).find('.dropdown-menu').slideToggle(300);
+});
+$('.dropdown').focusout(function () {
+    $(this).removeClass('active');
+    $(this).find('.dropdown-menu').slideUp(300);
+});
+$('.dropdown .dropdown-menu li').click(function () {
+    $(this).parents('.dropdown').find('span').text($(this).text());
+    $(this).parents('.dropdown').find('input').attr('value', $(this).attr('id'));
+});
+/*End Dropdown Menu*/
+$('.dropdown-menu li').click(function () {
+    var input = bus_location_json[$(this).val()].StopName.En,
+    output = stop_array.indexOf(input) - stop_array.indexOf("Po Jen Hospital"),
+    msg = '<span class="msg">The bus current location is: ',
+    msg_beforStop = '<span class="msg">The bus will arrive in: ',
+    msg_afterStop = '<span class="msg">The bus have passed: ';
+    // $('.msg').html(msg + '<strong>' + input + '</strong>' + '(' +bus_location_json[$(this).val()].StopName.Zh_tw + ')' + '</span>');
+    if(output){ // bus surpass the destination
+      $('.msg').html(msg + '<strong>' + input + '</strong>' + '(' +bus_location_json[$(this).val()].StopName.Zh_tw + ')' + '</span>'
+        + '<br>' + msg_afterStop + '<strong>' + Math.abs(output) + '</strong>' + 'stops from Po Jen Hospital(博仁醫院)</span>');
+    }else{ // bus not passed the destination yet
+      $('.msg').html(msg + '<strong>' + input + '</strong>' + '(' +bus_location_json[$(this).val()].StopName.Zh_tw + ')' + '</span>'
+        + '<br>' + msg_beforStop + '<strong>' + Math.abs(output) + '</strong>' + 'stops from Po Jen Hospital(博仁醫院)</span>');
+    }
+}); // $(this).parents('.dropdown').find('input').val()
 
-// export { get };
