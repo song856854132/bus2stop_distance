@@ -114,9 +114,12 @@ $('.dropdown-menu li').click(function () {
     if(output){ // bus surpass the destination
       $('.msg').html(msg + '<strong>' + input + '</strong>' + '(' +bus_location_json[$(this).val()].StopName.Zh_tw + ')' + '</span>'
         + '<br>' + msg_afterStop + '<strong>' + Math.abs(output) + '</strong>' + 'stops from Po Jen Hospital(博仁醫院)</span>');
-    }else{ // bus not passed the destination yet
-      $('.msg').html(msg + '<strong>' + input + '</strong>' + '(' +bus_location_json[$(this).val()].StopName.Zh_tw + ')' + '</span>'
+      }else{ // bus not passed the destination yet
+        $('.msg').html(msg + '<strong>' + input + '</strong>' + '(' +bus_location_json[$(this).val()].StopName.Zh_tw + ')' + '</span>'
         + '<br>' + msg_beforStop + '<strong>' + Math.abs(output) + '</strong>' + 'stops from Po Jen Hospital(博仁醫院)</span>');
+        if(0 < output <= 5){
+          alert('<strong> Po Jen Hospital(博仁醫院) is coming soon.</strong>')
+        }
     }
 }); // $(this).parents('.dropdown').find('input').val()
 
