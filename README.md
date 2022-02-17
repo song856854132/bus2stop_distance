@@ -3,7 +3,7 @@
 ## Simple discription
 
 It's a simple project that can dynamically search the distance to target from where your are. Base on the Bus plate you choose, the script will fetch the [PTX Bus API](https://ptx.transportdata.tw/MOTC/) to get json data, which contain your bus info including current location.
-Here is the example of code:
+Here is the example of javasricpt code:
 ```javascript=
 let bus_url='https://ptx.transportdata.tw/MOTC/v2/Bus/RealTimeNearStop/City/Taipei/672?%24top=30&%24format=JSON'
 
@@ -69,11 +69,24 @@ And the material below is what we get from PTX API acutally look like:
 ```
 
 ## How to use it
+### For javascript
 ```shell=
 $ git clone https://github.com/song856854132/bus2stop_distance.git
 ```
 And then you're free to go. Just pick the bus plate that you're riding, the result will show below.
+Or run cli as:
+```shell=
+$ cd public
+$ firefox index.html 
+```
 ![](https://i.imgur.com/PbIsUgY.png)
 
+### For python
+```python=
+$ cd python
+$ python3 bus_API.py
+```
+![](https://i.imgur.com/pd0XP93.png)
+
 ## Why use front-end
-There is many way to write this program, from web application to software application, from python to shell script. And acutally I'm able to write all of it. But base on my purpose, I want to write it as every one can simply open up and run it. Since every have the browser, the best way to write it is front-end style. Thus user don't need to install Node.js, PHP or Python anyway. However, the version 2 might come out with complete web app with React.js and Node.js that offer a full funtion of bus info searching system.
+There is many way to write this program, from web application to software application, from python to shell script. And acutally I'm able to write all of it. But base on my purpose, I want to write it as every one can simply open up and run it. Since every have the browser, the best way to write it is front-end style. Thus user don't need to install Node.js, PHP or Python anyway. However, the version 2 might come out with complete web app with Node.js as back-end that offer a full funtion of bus info searching system.
