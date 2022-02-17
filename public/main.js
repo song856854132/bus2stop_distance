@@ -105,14 +105,6 @@ $('.dropdown .dropdown-menu li').click(function () {
 });
 /*End Dropdown Menu*/
 $('.dropdown-menu li').click(function () {
-    if($(this).attr('id') == 'route_option@'){
-        document.write($(this).val());
-    }else if(){
-
-    }else{
-        
-    }
-
     var input = bus_location_json[$(this).val()].StopName.En,
     output = stop_array.indexOf(input) - stop_array.indexOf("Po Jen Hospital"),
     msg = '<span class="msg">The bus current location is: ',
